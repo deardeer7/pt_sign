@@ -17,11 +17,11 @@ PT站签到脚本
 
 1. 访问 (http://iyuu.cn/) ，使用微信扫码获取Token的api链接.
 
-<img src="images/2021101616404050.png" alt="微信推送接口" width="400px" />
+<img src="images/2021101616404050.png" alt="微信推送接口" width="700px" />
 
 2. 往下拉动页面复制包含token的api链接.
 
-<img src="images/2021101616424205.png" alt="微信推送接口" width="400px" />
+<img src="images/2021101616424205.png" alt="微信推送接口" width="700px" />
 
 3. 克隆本项目
 
@@ -33,7 +33,7 @@ git clone https://github.com/deardeer7/pt_sign.git
 ```python
 api = 'http://iyuu.cn/your_api'
 ```
-<img src="images/2021101617161603.png" alt="填写api" width="500px" />
+<img src="images/2021101617161603.png" alt="填写api" width="700px" />
 
 5. 打开 `site.json` 文件，自行根据[站点支持](#签到站点支持)和[站点配置](签到站点配置)，添加站点
 
@@ -50,7 +50,7 @@ python pt.py
 
 ## 微信推送效果
 
-<img src="images/042D032D23E73FD19B0F818993EF3E91.png" alt="微信推送接口" width="200px" />
+<img src="images/042D032D23E73FD19B0F818993EF3E91.png" alt="微信推送接口" width="300px" />
 
 ## 搭配`cron`实现定时签到
 
