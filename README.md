@@ -52,7 +52,28 @@ python pt.py
 
 <img src="images/042D032D23E73FD19B0F818993EF3E91.png" alt="微信推送接口" width="300px" />
 
-## 搭配`cron`实现定时签到
+## 自动签到
+
+### 1. 脚本定时签到
+
+run.sh：
+```shell
+#!/bin/bash
+while :
+do
+    date
+    python pt.py
+    sleep 1d
+done
+```
+
+执行：
+
+```shell
+nohup bash run.sh >sign.log 2>&1 &
+```
+
+### 2. 搭配`cron`实现定时签到
 
 例子：每天7:07 执行签到：
 
